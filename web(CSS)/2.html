@@ -15,19 +15,29 @@
         #active{ /*아이디 선택자*/
             color: red;
         }
-        #bigtitlecolor{
-            color:plum;
-        }
         .saw { /*클래스 선택자*/
             color: gray;
-        }
-        .bigtitle {
-            font-size: 60px;
-            text-align: center;
         }
         a { /*태그 선택자*/
             color: black;
             text-decoration: none; /*밑줄 제거*/
+        }
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ol{
+            border-right: 1px solid gray;
+            width: 80px;
+            margin: 0;
+            padding: 30px;
+            padding-left: 50px;
+        }
+        body{
+            margin: 0;
         }
         h4{
             color: red;
@@ -35,7 +45,7 @@
     </style>
 </head>
 <body>
-    <h1 class="bigtitle"><a href="index.html" title="WEB Information" id="bigtitlecolor">WEB</a></h1>
+    <h1><a href="index.html" title="WEB Information">WEB</a></h1>
     <ol>
         <li><a href="1.html" title="HTML Information" class="saw">HTML</a></li>
         <li><a href="2.html" title="CSS Information"  class="saw" id="active"><!--
