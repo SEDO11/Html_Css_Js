@@ -23,23 +23,35 @@ img: 이미지 추가
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        a {
-            color:black; 
-            text-decoration: none;
+        #active{ /*아이디 선택자*/
+            color: red;
         }
-        h1{ 
+        #tag{
+            color: orangered;
+        }
+        #bigtitlecolor{
+            color:plum;
+        }
+        .bigtitle {
             font-size: 60px;
             text-align: center;
+        }
+        .saw { /*클래스 선택자*/
+            color: gray;
+        }
+        a { /*태그 선택자*/
+            color:black; 
+            text-decoration: none;
         }
     </style>
     <title>WEB - HTML</title>
 </head>
 <body>
-    <h1><a href="index.html" title="WEB Information">WEB</a></h1>
+    <h1 class="bigtitle"><a href="index.html" title="WEB Information" id="bigtitlecolor">WEB</a></h1>
         <ol>
-            <li><a href="1.html" title="HTML Information" style="color:red; text-decoration:underline;">HTML</a></li>
-            <li><a href="2.html" title="CSS Information">CSS</a></li>
-            <li><a href="3.html" title="JavaScript Information">JavaScript</a></li>
+            <li><a href="1.html" title="HTML Information" class="saw" id="active">HTML</a></li>
+            <li><a href="2.html" title="CSS Information" class="saw">CSS</a></li>
+            <li><a href="3.html" title="JavaScript Information" class="saw">JavaScript</a></li>
         </ol>
         <h2>HTML</h2>
         <p><a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank" title="html5 내용">Hypertext Markup Language (HTML)</a> is the stadard markup<br>
@@ -55,7 +67,7 @@ img: 이미지 추가
         <br>
         <br>
         <h3>태그의 정의</h3>
-        <p><strong>제목 태그</strong></p>
+        <p><strong id="tag">제목 태그</strong></p>
         <h1>h1</h1>
         <h2>h2</h2>
         <h3>h3</h3>
@@ -64,23 +76,23 @@ img: 이미지 추가
         <h6>h6</h6>
         <br>
 
-        <p><strong>strong, 강조 태그</strong></p>
+        <p><strong id="tag">strong, 강조 태그</strong></p>
         <p><strong>글씨가 진해짐</strong></p>
         <br>
 
-        <p><strong>u, 밑줄 태그</strong></p>
+        <p><strong id="tag">u, 밑줄 태그</strong></p>
         <p><u>밑줄을 긋는 태그</u></p>
         <br>
 
-        <p><strong>br, 줄 바꿈 태그</strong></p>
+        <p><strong id="tag">br, 줄 바꿈 태그</strong></p>
         <p>서로<br>줄을 바꾼다</p>
         <br>
 
-        <p><strong>p, 문장 바꿈 태그</strong></p>
+        <p><strong id="tag">p, 문장 바꿈 태그</strong></p>
         <p>문장의</p> <p>줄을 바꾼다</p>
         <br>
 
-        <p><strong>li, 목차태그</strong></p>
+        <p><strong id="tag">li, 목차태그</strong></p>
         <p>
             <li>목차태그 1</li>
             <li>목차태그 2</li>
@@ -88,7 +100,7 @@ img: 이미지 추가
         </p>
         <br>
 
-        <p><strong>ul, 목차분류태그</strong></p>
+        <p><strong id="tag">ul, 목차분류태그</strong></p>
         <ul>
             <li>목차분류태그 1</li>
             <li>목차분류태그 2</li>
@@ -96,7 +108,7 @@ img: 이미지 추가
         </ul>
         <br>
 
-        <p><strong>ol, 번호매김 목차분류태그</strong></p>
+        <p><strong id="tag">ol, 번호매김 목차분류태그</strong></p>
         <ol>
             <li>목차분류태그 </li>
             <li>목차분류태그 </li>
@@ -104,15 +116,15 @@ img: 이미지 추가
         </ol>
         <br>
 
-        <p><strong>body, 본문 태그</strong></p>
+        <p><strong id="tag">body, 본문 태그</strong></p>
         <p>웹사이트의 내용이 담겨있음</p>
         <br>
 
-        <p><strong>head, 본문 설명 태그</strong></p>
+        <p><strong id="tag">head, 본문 설명 태그</strong></p>
         <p><strong>body</strong> 태그의 내용을 설명 or 설정할 때 사용하는 태그</p>
         <br>
 
-        <p><strong>a, 링크 태그</strong></p>
+        <p><strong id="tag">a, 링크 태그</strong></p>
         <p>다른 웹사이트로 이동할 수 있음</p>
         <a href="https://www.youtube.com/channel/UCgJ8iR8g3_7Cx-kqZZAcRrQ" target="_blank" style="text-decoration: underline; color:red;">내 유튜브 바로가기</a>
         <br>
@@ -120,7 +132,7 @@ img: 이미지 추가
         <br>
         <br>
         <h3>속성의 정의</h3>
-        <p><strong>img, 사진추가</strong></p>
+        <p><strong id="tag">img, 사진추가</strong></p>
         <img src="picture/coding.jpg" width="50%">
         <br>
 </body>

@@ -15,16 +15,19 @@
         #active{ /*아이디 선택자*/
             color: red;
         }
+        #bigtitlecolor{
+            color:plum;
+        }
         .saw { /*클래스 선택자*/
             color: gray;
+        }
+        .bigtitle {
+            font-size: 60px;
+            text-align: center;
         }
         a { /*태그 선택자*/
             color: black;
             text-decoration: none; /*밑줄 제거*/
-        }
-        h1{ 
-            font-size: 60px;
-            text-align: center;
         }
         h4{
             color: red;
@@ -32,13 +35,13 @@
     </style>
 </head>
 <body>
-    <h1><a href="index.html" title="WEB Information">WEB</a></h1>
+    <h1 class="bigtitle"><a href="index.html" title="WEB Information" id="bigtitlecolor">WEB</a></h1>
     <ol>
         <li><a href="1.html" title="HTML Information" class="saw">HTML</a></li>
         <li><a href="2.html" title="CSS Information"  class="saw" id="active"><!--
             text-decoration: underline;"은 여기에 밑줄을 긋는다는 뜻임
         -->CSS</a></li> <!--여기에서 쓰이는 style은 html의 속성이다. css아님-->
-        <li><a href="3.html" title="JavaScript Information">JavaScript</a></li>
+        <li><a href="3.html" title="JavaScript Information" class="saw">JavaScript</a></li>
     </ol>
     <!--
         이것과 CSS을 이용해 색깔을 바꾸는 것은 같음
