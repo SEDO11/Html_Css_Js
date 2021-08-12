@@ -12,17 +12,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB - CSS</title>
     <style>
-        a {
-            color:black; /*모든 a 태그의 색깔을 검정색으로 바꿈*/
+        #active{ /*아이디 선택자*/
+            color: red;
+        }
+        .saw { /*클래스 선택자*/
+            color: gray;
+        }
+        a { /*태그 선택자*/
+            color: black;
             text-decoration: none; /*밑줄 제거*/
+        }
+        h1{ 
+            font-size: 60px;
+            text-align: center;
+        }
+        h4{
+            color: red;
         }
     </style>
 </head>
 <body>
     <h1><a href="index.html" title="WEB Information">WEB</a></h1>
     <ol>
-        <li><a href="1.html" title="HTML Information">HTML</a></li>
-        <li><a href="2.html" title="CSS Information" style="color: red; text-decoration: underline;" ><!--
+        <li><a href="1.html" title="HTML Information" class="saw">HTML</a></li>
+        <li><a href="2.html" title="CSS Information"  class="saw" id="active"><!--
             text-decoration: underline;"은 여기에 밑줄을 긋는다는 뜻임
         -->CSS</a></li> <!--여기에서 쓰이는 style은 html의 속성이다. css아님-->
         <li><a href="3.html" title="JavaScript Information">JavaScript</a></li>
@@ -43,14 +56,14 @@
         마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
         현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.</p>
     <br>
-    <b
+    <br>
     <h3>코드 정의</h3>
     <p><strong>style</strong></p>
     <p><strong style="color: red;">style</strong>="color: red; text-decoration: underline;</p> 
     <p>여기서 <strong style="color: red;">style</strong>은 html의 속성이다.</p>
     <br>
 
-    <p><strong>head 내에 있는 style</strong></p>
+    <h4>head 내에 있는 style</h4>
     <strong style="color: blue;">style</strong><br>
         a {<br>
             color:black; (1)<br>
@@ -64,5 +77,18 @@
     <p style="color: blue;">color:, text-decoration:  속성</p> 
     <p style="color: blue;">black, none 값</p>
     <br>
+
+    <h4>글씨 크기 조정 코드</h4>
+    <p><strong>font-size: 60px;</strong></p>
+    <p>font-size => 폰트크기 조정속성</p>
+    <p>60px => 60px 사이즈로 만든다 or %, lagre등으로 나타낼 수 있음</p>
+    <br>
+
+    <h4>글씨 위치 조정 코드</h4>
+    <p><strong>text-align: center;</strong></p>
+    <p>text-align => 글씨 위치 속성</p>
+    <p>center => 폰트를 가운데 정렬 시킴, left, right 등도 있음</p>
+    <br>
+
 </body>
 </html>
