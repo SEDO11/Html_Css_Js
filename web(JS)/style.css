@@ -8,6 +8,11 @@
     padding-right: 25px;
 }
 
+#article span{
+    font-weight: bold;
+    color: red;
+}
+
 #webImg {
     width: 100%;
 }
@@ -40,8 +45,12 @@
     margin: 0;
 }
 
+#night_day{
+    text-align: center;
+}
+
 a {
-    color: black;
+    color:black;
     text-decoration: none;
 }
 
@@ -49,6 +58,12 @@ body {
     margin: 0;
 }
 
+/*
+h2{
+    color: powderblue;
+    background-color: coral;
+}
+*/
 @media (max-width:800px) {
     #grid {
         display: block;
